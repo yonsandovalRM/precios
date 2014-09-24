@@ -1,0 +1,376 @@
+@media print{
+.impresion {display:none;}}
+
+/*------------------------------------------------
+        BEGIN ID
+------------------------------------------------*/
+#principal{
+	width: 100%;
+	background: #fff;
+	height: 100%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+#medio{
+	background: #353F5A;
+	background-image: url('../img/wall2.jpg');
+	background-repeat: repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	padding-bottom: 22px;
+	text-shadow: 1px 1px #000;
+}
+#copy{
+	background: #2e364d;
+	width: 100%;
+	padding: 10px;
+	color: #4C556F;
+	font-size: 11px;
+	text-align: center;
+}
+#navegacion{
+	color: #f4f4f4;
+	text-align: right;
+	width: 100%;
+	padding-right: 20px;
+	float: right;
+	background: #384055;
+}
+#contenido{
+	background: #E8EEFD;
+	padding: 20px;
+	background-image: url('../img/mosaico.png');
+	background-repeat: repeat;
+}
+#noticias{
+	background: rgba(2, 2, 2, 0.1);
+	color: #C9D5FA;
+	border: 1px solid #454A64;
+}
+#noticias > ul > li{
+	background: #2e364d;
+	color: #B6B6B6;
+}
+/*------------------------------------------------
+        END ID
+------------------------------------------------*/
+
+
+/*------------------------------------------------
+        BEGIN ELEMENTOS
+------------------------------------------------*/
+body{
+	background: #2e364d;
+	color:#444;
+	margin-top: 52px;
+	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Handlee', cursive;
+	font-size: 16px;*/
+}
+header {
+	width: 100%;
+	height: 50px;
+	background: #1F6FAD;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+footer{
+	width: 100%;
+	background: #212633;
+	color: #BBBBBB;
+	padding: 20px;
+	font-size: 13px;
+	background-image: url('../img/bg.png');
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+h5{
+	font-size: 16px;
+}
+/*------------------------------------------------
+        END ELEMENTOS
+------------------------------------------------*/
+/*------------------------------------------------
+        BEGIN ELEMENTOS y CLASES
+------------------------------------------------*/
+img .img-responsive .centrado {
+	max-width: 180px;
+}
+hr{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+
+}
+.outicon > li > a {
+	/*border-bottom: 1px solid #585858;*/
+	text-decoration: none;
+
+}
+.outicon {
+	list-style: square url("../img/icon.png");
+}
+.outicon2 {
+	list-style: none;
+	padding-left: 5px;
+}
+.listapautas,.listaformularios {
+	list-style: square url("../img/icons/pdf.png");
+}
+.listaimagenfooter>li{
+	list-style: none;
+}
+.listafootercontacto>li{
+	list-style: none;
+}
+ul.listaimagenfooter {
+	padding: 0px;
+}
+ul.listafootercontacto {
+	padding-left: 20px;
+	color: #bebebe;
+}
+ul.outicon>li>a {
+	color: #bebebe;
+	border-bottom: 1px solid #4E4E4E;
+
+}
+ul.listapautas > li >a ,ul.listaformularios > li >a {
+	color:#444;
+}
+ul.listafootercontacto>li>a {
+	color: #bebebe;
+}
+ul.outicon>li>a:hover {
+	color: #fff;
+}
+ul.listafootercontacto>li>a:hover {
+	color: #fff;
+}
+.table > thead > tr > td.subtitulo,
+.table > tbody > tr > td.subtitulo,
+.table > tfoot > tr > td.subtitulo,
+.table > thead > tr > th.subtitulo,
+.table > tbody > tr > th.subtitulo,
+.table > tfoot > tr > th.subtitulo,
+.table > thead > tr.subtitulo > td,
+.table > tbody > tr.subtitulo > td,
+.table > tfoot > tr.subtitulo > td,
+.table > thead > tr.subtitulo > th,
+.table > tbody > tr.subtitulo > th,
+.table > tfoot > tr.subtitulo > th {
+	background-color: #CDDBFF;/*#CDDBFF*/
+}
+.table-hover > tbody > tr > td.subtitulo:hover,
+.table-hover > tbody > tr > th.subtitulo:hover,
+.table-hover > tbody > tr.subtitulo:hover > td,
+.table-hover > tbody > tr:hover > .subtitulo,
+.table-hover > tbody > tr.subtitulo:hover > th {
+	background-color: #9EB9FF;
+}
+
+.navbar{
+	border:0px;
+	color:#fff;
+	border-radius: 0px;
+}
+.navbar-default {
+	background-color: #3F4A69;
+	border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #fff;
+	background-color: #58668F;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #fff;
+	background-color: #58668F;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #fff;
+	background-color: transparent;
+}
+.navbar-nav > li > .dropdown-menu {
+	background: #D1DCF8;
+}
+.dropdown-menu .divider {
+	background-color: #B2B9D6;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background-color: #B2CDF5;
+}
+.btn-default {
+	background-color: #98B2D8;
+	border-color: #51639B;
+}
+.btn-default:hover {
+	background-color: #B6D1FA;
+	border-color: #335C99;
+}
+/*------------------------------------------------
+        END ELEMENTOS y CLASES
+------------------------------------------------*/
+/*------------------------------------------------
+        BEGIN CLASES
+------------------------------------------------*/
+.bienvenida{
+	font-family: 'Handlee', cursive;
+}
+.hrmedio{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+}
+.circulo{
+	border: 5px solid #7A4C2D;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+}
+.espacio{
+	width: 100%;
+	height: 20px;
+	float: left;
+}
+.video-responsive{
+	width: 100%;
+	-webkit-box-shadow: 0px 7px 24px 0px rgba(0, 0, 0, 0.93);
+	-moz-box-shadow:    0px 7px 24px 0px rgba(0, 0, 0, 0.93);
+	box-shadow:         0px 7px 24px 0px rgba(0, 0, 0, 0.93);
+}
+.mapa{
+	width: 100%;
+}
+.zonanorte, .zonacentro, .zonasur, .fisicos,.cajaazul{
+	width: 100%;
+	padding: 15px;
+	margin: 5px;
+}
+.zonanorte{
+	background: #C4D0F0;
+	border: 1px solid #9EB4EE;
+}
+.zonacentro{
+	background: #fff;
+	border: 1px solid #DFDDDD;
+}
+.zonasur{
+	background: #F7D6D6;
+	border: 1px solid #F7B5B5;
+}
+.fisicos{
+	background: #D6F7E3;
+	border: 1px solid #A0F5C1;
+}
+.cajaazul{
+	background: #DDEDFD;
+	border: 1px solid #BFDDFA;
+}
+.logo{
+	width: 95px;
+}
+
+.impresion{
+	text-align: right;
+	color: #95B8DB;
+	float: right;
+	padding: 7px;
+	border-top: 5px solid #2e364d;
+	border-right: 5px solid #2e364d;
+	border-left: 5px solid #2e364d;
+	background: #2e364d;
+}
+.impresion > a{
+	color: #FFFFFF;
+}
+.margen{
+	border: 5px solid #2e364d;
+}
+.botonimprimir{
+	margin: 0px;
+}
+.botonimprimir > a{
+	color: #fff;
+}
+.derecha{
+	text-align: right;
+}
+.imagepd{
+	padding-left: 1px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-right: 0px;
+	opacity: 0.5;
+
+	filter: url('#grayscale'); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+	filter: Gray(); /* IE4-8 and 9 */
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.imagepd:hover{
+	padding-left: 1px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-right: 0px;
+	opacity: 1;
+
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: none;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+.desarrollador{
+	float: right;
+}
+/*------------------------------------------------
+        END CLASES
+------------------------------------------------*/
+
+
+/*------------------------------------------------
+        BEGIN AJUSTES DE TABLA PRECIOS
+------------------------------------------------*/
+.tablaprecios{
+	background: rgba(255,255,255,0.5);
+	padding: 10px;
+
+}
+.titulo{
+	background: #2e364d;
+	color:#fff;/*#3F4B68*/
+
+}
+.codigo{
+	width: 25px;
+}
+.valor{
+	width: 90px;
+}
+
+
+
+
+/*------------------------------------------------
+        END AJUSTES DE TABLA PRECIOS
+------------------------------------------------*/
