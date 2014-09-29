@@ -1,3 +1,10 @@
+<?php
+
+/*para que el programa funcione requerimos obligatoriamente
+y de forma estricta que se incluya el fichero class.php*/
+require_once("include/class.php");
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,22 +41,22 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li class="dropdown active">
+            <li><a href="index.php">Home</a></li>
+            <li class="active"><a href="nosotros.php">Nosotros</a></li>
+            <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análisis <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="suelos.html">Suelos</a></li>
-                    <li><a href="foliar.html">Tejidos vegetales</a></li>
-                    <li><a href="frutos.html">Frutos</a></li>
-                    <li><a href="aguas.html">Aguas</a></li>
-                    <li><a href="fito.html">Fitopatológicos</a></li>
-                    <li><a href="fertilizantes.html">Fertilizantes orgánicos / Kits / Otros</a></li>
+                    <li><a href="suelos.php">Suelos</a></li>
+                    <li><a href="foliar.php">Tejidos vegetales</a></li>
+                    <li><a href="frutos.php">Frutos</a></li>
+                    <li><a href="aguas.php">Aguas</a></li>
+                    <li><a href="fito.php">Fitopatológicos</a></li>
+                    <li><a href="fertilizantes.php">Fertilizantes orgánicos / Kits / Otros</a></li>
                     <li class="divider"></li>
-                    <li><a href="formularios.html">Formularios</a></li>
-                    <li><a href="enviomuestras.html">Envío de muestras</a></li>
-                    <li><a href="pautasdemuestreo.html">Pautas de Muestreo</a></li>
-                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="formularios.php">Formularios</a></li>
+                    <li><a href="enviomuestras.php">Envío de muestras</a></li>
+                    <li><a href="pautasdemuestreo.php">Pautas de Muestreo</a></li>
+                    <li><a href="precios.php">Precios</a></li>
                     <li class="divider"></li>
                     <li><a href="include/cotizar.php">Cotizar</a></li>
                 </ul>
@@ -67,8 +74,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Idioma <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="index.html">Español</a></li>
-            <li><a href="en/index.html">English</a></li>
+            <li><a href="index.php">Español</a></li>
+            <li><a href="en/index.php">English</a></li>
           </ul>
         </li>
         </ul>
@@ -99,54 +106,46 @@
             </script>
         </section>
         <div id="navegacion">
-          <h6><a href="index.html">Home</a><i class="glyphicon glyphicon-chevron-right"></i> Análisis <i class="glyphicon glyphicon-chevron-right"></i><span> Envío de muestras</span></h6>
+          <h6><a href="index.php">Home</a><i class="glyphicon glyphicon-chevron-right"></i> <span>Nosotros</span></h6>
         </div>
         <div id="contenido">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>Envío de muestras</h3>
-                    <div class="col-xs-12">
+                    <h3>Nosotros</h3>
+                    <div class="col-xs-12 col-sm-7">
                         <br>
-                        <h5>Análisis de muestras</h5>
-                        <div class="cajaazul">
-                            <p>Jose Domingo Cañas #2914, Ñuñoa, Santiago</p>
-                            <p>Región Metropolitana</p>
-                            <div class="alert alert-warning alert-dismissible" role="alert">
-                                <button type="button" class="close" data-dismiss="alert">
-                                <span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
-                                Todas las muestras deben estas acompañadas con el <strong>Formulario de Ingreso</strong> correspondiente al tejido enviado.
-                            </div>
-                        </div>
+                        <h4>Experiencia</h4>
+                        <p>Con más de 27 años en el mercado, Agrolab se ha posicionado como uno de los laboratorios líderes en Análisis Agrícolas, dando confianza y seguridad en la entrega de sus resultados.
+                        </p>
+                        <p>Además, desde hace 6 años incorporamos a  Blancaluz Pinilla, Ingeniera Agrónoma, MSc y Claudia Corvalán, Ingeniera Agrónoma, especialistas en fitopatología para que lideren el área fitopatológica del laboratorio.</p>
                         <br>
-                        <h5>Depósitos Bancarios</h5>
-                        <div class="cajaazul">
-                            <p>Laboratorio de Análisis Agrícola AGROLAB Ltda.</p>
-                            <p>Cuanta Corriente: 160-68652-00</p>
-                            <p>Rut: 79.715.750-3</p>
-                            <p>Banco de Chile</p>
-                            <br>
-                            <p>Favor informar vía email a (secreagro@agrolab.cl) o teléfono (22258087) la cancelación del análisis indicando el Número de Factura u Orden de Trabajo para poder identificar el deposito en nuestros registros.</p>
+                        <div class="col-xs-6">
+                            <h4>Misión</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laborum doloribus consequatur vitae nam blanditiis, corrupti, perspiciatis perferendis culpa ex eveniet, corporis, ab obcaecati cumque at rem odio eum amet.</p>
                         </div>
+                        <div class="col-xs-6">
+                            <h4>Visión</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laborum doloribus consequatur vitae nam blanditiis, corrupti, perspiciatis perferendis culpa ex eveniet, corporis, ab obcaecati cumque at rem odio eum amet.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
                         <br>
-                        <h5>Condiciones de pago</h5>
-                        <div class="cajaazul">
-                            <p>Laboratorio de Análisis Agrícola AGROLAB Ltda.</p>
-                            <p>Cuanta Corriente: 160-68652-00</p>
-                            <p>Rut: 79.715.750-3</p>
-                            <p>Banco de Chile</p>
-                            <br>
-                            <p>Favor informar vía email a (secreagro@agrolab.cl) o teléfono (22258087) la cancelación del análisis indicando el Número de Factura u Orden de Trabajo para poder identificar el deposito en nuestros registros.</p>
-                        </div>
+                        <h4>Acreditación</h4>
+                        <p>Agrolab se encuentra acreditado por la Comisión de Normalización y Acreditación (CNA) de la Sociedad Chilena de la Ciencia del Suelo para realizar análisis de suelo y foliar.Los análisis de agua son controlados a través de ensayos inter-laboratorios por Fundación Chile.</p>
+                        <p>Agrolab, se encuentra acreditado por el Servicio Agrícola Ganadero (SAG), para realizar análisis de suelo requeridos por el Ministerio de Agricultura para el programa de recuperación de suelo degradados.</p>
+                        <p>Agrolab, esta reconocido por el SAG para la realización de ensayos en campo y laboratorio de nuevas moléculas químicas.</p>
                         <br>
-                        <h5>Recepción de muestras y modo correcto de envío</h5>
-                        <div class="cajaazul">
-                            <p>Recepción de muestras desde todo Chile vía Chilexpress www.chilexpress.cl</p>
-                            <p>Para realizar un correcto ingreso de las muestras, estas deberán estar identificadas con los datos generales y de origen, de lo contrario, quedaran espacios sin llenar en los resultados.</p>
-                            <br>
-                            <ul class="listapautas">
-                                <li><a href="assets/envio_muestras.pdf">Formulario de envio para muestras</a></li>
-                            </ul>
-                        </div>
+                        <ul class="listapautas">
+                            <li><a href="assets/certificados/CertificadoAguaCesmec.pdf">Certificado Análisis Agua Bacteriológico. Lab. convenio CESMEC</a></li>
+                            <li><a href="assets/certificados/CertificadoAguaCMQ.pdf">Certificado Análisis de Aguas</a></li>
+                            <li><a href="assets/certificados/CertificadoLodos.pdf">Certificado Análisis de Lodos</a></li>
+                            <li><a href="assets/certificados/CertificadoCompost.pdf">Certificado Análisis Compost (Fert. Orgánicos)</a></li>
+                            <li><a href="assets/certificados/CertificadoSuelosAcidos.pdf">Certificado Análisis Suelos Ácidos</a></li>
+                            <li><a href="assets/certificados/CertificadoSalinidad.pdf">Certificado Análisis Suelos Afectados por Sales</a></li>
+                            <li><a href="assets/certificados/CertificadoTejidosVegetales.pdf">Certificado Análisis Tejidos Vegetales</a></li>
+                            <li><a href="assets/certificados/CertificadoPlaguicidas.pdf">Certificado pruebas de plaguicidas</a></li>
+                            <li><a href="assets/certificados/CertificadoSuelosDegradados.pdf">Certificado recuperación suelos degradados</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -157,22 +156,22 @@
             <div class="col-xs-12 col-sm-6 col-md-2">
                 <h5>SERVICIOS</h5>
                     <ul class="outicon">
-                        <li><a href="suelos.html">Suelos</a></li>
-                        <li><a href="foliar.html">Tejidos vegetales</a></li>
-                        <li><a href="frutos.html">Frutos</a></li>
-                        <li><a href="aguas.html">Aguas</a></li>
-                        <li><a href="fito.html">Fitopatológicos</a></li>
-                        <li><a href="fertilizantes.html">Fertilizantes orgánicos / Kits / Otros</a></li>
+                        <li><a href="suelos.php">Suelos</a></li>
+                        <li><a href="foliar.php">Tejidos vegetales</a></li>
+                        <li><a href="frutos.php">Frutos</a></li>
+                        <li><a href="aguas.php">Aguas</a></li>
+                        <li><a href="fito.php">Fitopatológicos</a></li>
+                        <li><a href="fertilizantes.php">Fertilizantes orgánicos / Kits / Otros</a></li>
                     </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
                 <h5>ACERCA DE</h5>
                     <ul class="outicon">
-                        <li><a href="pautasdemuestreo.html">Pautas de muestreo</a></li>
-                        <li><a href="formularios.html">Formularios</a></li>
-                        <li><a href="enviomuestras.html">Envío de muestras</a></li>
-                        <li><a href="nosotros.html">Acreditaciones</a></li>
-                        <li><a href="precios.html">Precios de análisis</a></li>
+                        <li><a href="pautasdemuestreo.php">Pautas de muestreo</a></li>
+                        <li><a href="formularios.php">Formularios</a></li>
+                        <li><a href="enviomuestras.php">Envío de muestras</a></li>
+                        <li><a href="nosotros.php">Acreditaciones</a></li>
+                        <li><a href="precios.php">Precios de análisis</a></li>
                     </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
@@ -187,21 +186,17 @@
                 <h5>NOTICIAS</h5>
                 <div id="noticias">
                     <ul>
-                        <li>
-                            <h5>Fitopatología</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Nutrición</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Actualización de precios según IPC</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
+                    <?php
+                        $noticias = new Noticias();
+                        $noticias=$noticias->get_noticias(1);
+
+                        for($i=0;$i<sizeof($noticias);$i++){
+                            echo '<li>';
+                            echo '<h5>'.$noticias[$i]["TITULO"].'</h5>';
+                            echo '<p>'.$noticias[$i]["CONTENIDO"].'</p>';
+                            echo '</li>';
+                        }
+                    ?>
                     </ul>
                 </div>
                 <script>

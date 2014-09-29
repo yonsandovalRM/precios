@@ -1,3 +1,10 @@
+<?php
+
+/*para que el programa funcione requerimos obligatoriamente
+y de forma estricta que se incluya el fichero class.php*/
+require_once("include/class.php");
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,22 +41,22 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="nosotros.php">Nosotros</a></li>
             <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análisis <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="suelos.html">Suelos</a></li>
-                    <li><a href="foliar.html">Tejidos vegetales</a></li>
-                    <li><a href="frutos.html">Frutos</a></li>
-                    <li><a href="aguas.html">Aguas</a></li>
-                    <li><a href="fito.html">Fitopatológicos</a></li>
-                    <li><a href="fertilizantes.html">Fertilizantes orgánicos / Kits / Otros</a></li>
+                    <li><a href="suelos.php">Suelos</a></li>
+                    <li><a href="foliar.php">Tejidos vegetales</a></li>
+                    <li><a href="frutos.php">Frutos</a></li>
+                    <li><a href="aguas.php">Aguas</a></li>
+                    <li><a href="fito.php">Fitopatológicos</a></li>
+                    <li><a href="fertilizantes.php">Fertilizantes orgánicos / Kits / Otros</a></li>
                     <li class="divider"></li>
-                    <li><a href="formularios.html">Formularios</a></li>
-                    <li><a href="enviomuestras.html">Envío de muestras</a></li>
-                    <li><a href="pautasdemuestreo.html">Pautas de Muestreo</a></li>
-                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="formularios.php">Formularios</a></li>
+                    <li><a href="enviomuestras.php">Envío de muestras</a></li>
+                    <li><a href="pautasdemuestreo.php">Pautas de Muestreo</a></li>
+                    <li><a href="precios.php">Precios</a></li>
                     <li class="divider"></li>
                     <li><a href="include/cotizar.php">Cotizar</a></li>
                 </ul>
@@ -67,8 +74,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Idioma <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="index.html">Español</a></li>
-            <li><a href="en/index.html">English</a></li>
+            <li><a href="index.php">Español</a></li>
+            <li><a href="en/index.php">English</a></li>
           </ul>
         </li>
         </ul>
@@ -99,39 +106,39 @@
             </script>
         </section>
         <div id="navegacion">
-          <h6><a href="index.html">Home</a><i class="glyphicon glyphicon-chevron-right"></i> Análisis <i class="glyphicon glyphicon-chevron-right"></i><span> Tejidos Vegetales</span></h6>
+          <h6><a href="index.php">Home</a><i class="glyphicon glyphicon-chevron-right"></i> Análisis <i class="glyphicon glyphicon-chevron-right"></i><span> Fitopatológicos</span></h6>
         </div>
         <div id="contenido">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>Tejidos Vegetales</h3>
+                    <h3>Fitopatológicos</h3>
                     <div class="col-xs-12">
                         <br>
-                        <p>El análisis de muestras de tejidos de distintas partes de las plantas es revelador de su condición en un momento dado y una guía para el manejo eficiente.</p>
-                        <p>Diagnóstico nutricional que nos permite detectar deficiencias o toxicidades en las plantas.</p>
+                        <p>Es vital detectar patologías que afectan a los cultivos con análisis certeros y oportunos para realizar controles eficientes, para ello disponemos de un equipado y moderno laboratorio, con profesionales especialistas en el tema y todos los elementos necesarios para efectuar análisis y servicios.</p>
                     </div>
                     <div class="col-xs-9">    
                         <br>
                         <div class="cajaazul">
-                            <p>N-P-K-Ca-Mg-Zn-Mn-Fe-Cu-B</p>
-                            <p>Perfil metabólico del Nitrógeno (Ntot-N-NO3-N-NH4)</p>
-                            <p>Salinidad: B-Cl-Na</p>
-                            <p>Sarmientos, raíces, otros tejidos (Va junto a Foliar y tejidos)</p>
-                            <p>Reservas nitrogenadas y carbohidratadas.</p>
-                            <p>Yemas (Va junto a Foliar y tejidos)</p>
-                            <p>Fertilidad de las yemas para definir el largo de la poda.</p>
+                            <p>Análisis de identificación de patógenos en muestras vegetales.</p>
+                            <p>Análisis de resistencia de hongos a fungicidas.</p>
+                            <p>Análisis de detección precoz de enfermedades: vides, carozos, pomáceas y kiwis (flores y frutos).</p>
+                            <p>Monitoreos en líneas de selección de frutas, cámaras de guarda y aguas de lavado.</p>
+                            <p>Evaluación de eficiencia de fungicidas en pruebas “in vitro”, “in vivo” y ensayos de campo.</p>
+                            <p>Asesorías y diagnósticos en terreno.</p>
+                            <p>Cursos de capacitación en identificación y diagnóstico de pudriciones de postcosecha.</p>
+                            <p>Capacitación del personal en higiene de procesos de plantas embaladoras de frutas.</p>
                         </div>
                         <br>
                         <div class="goto">
                             <ul>
-                                <li><a href="pautasdemuestreo.html">Ir a <strong>Pautas de muestreo</strong></a></li>
-                                <li><a href="precios.html">Ir a <strong>Precios</strong></a></li>
+                                <li><a href="pautasdemuestreo.php">Ir a <strong>Pautas de muestreo</strong></a></li>
+                                <li><a href="precios.php">Ir a <strong>Precios</strong></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <img class="img-responsive img-thumbnail" src="img/analisis/foliar.jpg" alt="">
-                        <img class="img-responsive img-thumbnail" src="img/analisis/foliar2.jpg" alt="">
+                        <img class="img-responsive img-thumbnail" src="img/analisis/fito2.jpg" alt="">
+                        <img class="img-responsive img-thumbnail" src="img/analisis/fito.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -142,22 +149,22 @@
             <div class="col-xs-12 col-sm-6 col-md-2">
                 <h5>SERVICIOS</h5>
                     <ul class="outicon">
-                        <li><a href="suelos.html">Suelos</a></li>
-                        <li><a href="foliar.html">Tejidos vegetales</a></li>
-                        <li><a href="frutos.html">Frutos</a></li>
-                        <li><a href="aguas.html">Aguas</a></li>
-                        <li><a href="fito.html">Fitopatológicos</a></li>
-                        <li><a href="fertilizantes.html">Fertilizantes orgánicos / Kits / Otros</a></li>
+                        <li><a href="suelos.php">Suelos</a></li>
+                        <li><a href="foliar.php">Tejidos vegetales</a></li>
+                        <li><a href="frutos.php">Frutos</a></li>
+                        <li><a href="aguas.php">Aguas</a></li>
+                        <li><a href="fito.php">Fitopatológicos</a></li>
+                        <li><a href="fertilizantes.php">Fertilizantes orgánicos / Kits / Otros</a></li>
                     </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
                 <h5>ACERCA DE</h5>
                     <ul class="outicon">
-                        <li><a href="pautasdemuestreo.html">Pautas de muestreo</a></li>
-                        <li><a href="formularios.html">Formularios</a></li>
-                        <li><a href="enviomuestras.html">Envío de muestras</a></li>
-                        <li><a href="nosotros.html">Acreditaciones</a></li>
-                        <li><a href="precios.html">Precios de análisis</a></li>
+                        <li><a href="pautasdemuestreo.php">Pautas de muestreo</a></li>
+                        <li><a href="formularios.php">Formularios</a></li>
+                        <li><a href="enviomuestras.php">Envío de muestras</a></li>
+                        <li><a href="nosotros.php">Acreditaciones</a></li>
+                        <li><a href="precios.php">Precios de análisis</a></li>
                     </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
@@ -172,21 +179,17 @@
                 <h5>NOTICIAS</h5>
                 <div id="noticias">
                     <ul>
-                        <li>
-                            <h5>Fitopatología</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Nutrición</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Actualización de precios según IPC</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
+                    <?php
+                        $noticias = new Noticias();
+                        $noticias=$noticias->get_noticias(1);
+
+                        for($i=0;$i<sizeof($noticias);$i++){
+                            echo '<li>';
+                            echo '<h5>'.$noticias[$i]["TITULO"].'</h5>';
+                            echo '<p>'.$noticias[$i]["CONTENIDO"].'</p>';
+                            echo '</li>';
+                        }
+                    ?>
                     </ul>
                 </div>
                 <script>

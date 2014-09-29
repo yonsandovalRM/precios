@@ -1,3 +1,10 @@
+<?php
+
+/*para que el programa funcione requerimos obligatoriamente
+y de forma estricta que se incluya el fichero class.php*/
+require_once("include/class.php");
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,28 +41,28 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="nosotros.php">Nosotros</a></li>
             <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análisis <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="suelos.html">Suelos</a></li>
-                    <li><a href="foliar.html">Tejidos vegetales</a></li>
-                    <li><a href="frutos.html">Frutos</a></li>
-                    <li><a href="aguas.html">Aguas</a></li>
-                    <li><a href="fito.html">Fitopatológicos</a></li>
-                    <li><a href="fertilizantes.html">Fertilizantes orgánicos / Kits / Otros</a></li>
+                    <li><a href="suelos.php">Suelos</a></li>
+                    <li><a href="foliar.php">Tejidos vegetales</a></li>
+                    <li><a href="frutos.php">Frutos</a></li>
+                    <li><a href="aguas.php">Aguas</a></li>
+                    <li><a href="fito.php">Fitopatológicos</a></li>
+                    <li><a href="fertilizantes.php">Fertilizantes orgánicos / Kits / Otros</a></li>
                     <li class="divider"></li>
-                    <li><a href="formularios.html">Formularios</a></li>
-                    <li><a href="enviomuestras.html">Envío de muestras</a></li>
-                    <li><a href="pautasdemuestreo.html">Pautas de Muestreo</a></li>
-                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="formularios.php">Formularios</a></li>
+                    <li><a href="enviomuestras.php">Envío de muestras</a></li>
+                    <li><a href="pautasdemuestreo.php">Pautas de Muestreo</a></li>
+                    <li><a href="precios.php">Precios</a></li>
                     <li class="divider"></li>
                     <li><a href="include/cotizar.php">Cotizar</a></li>
                 </ul>
             </li>
         </ul>
-        <form class="navbar-form navbar-left" role="search" method="get" action="http://www.google.cl/search">
+       <form class="navbar-form navbar-left" role="search" method="get" action="http://www.google.cl/search">
         <div class="form-group">
             <input type="search" name="q" class="form-control" placeholder="ingrese su búsqueda" required="required">
         </div>
@@ -67,8 +74,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Idioma <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="index.html">Español</a></li>
-            <li><a href="en/index.html">English</a></li>
+            <li><a href="index.php">Español</a></li>
+            <li><a href="en/index.php">English</a></li>
           </ul>
         </li>
         </ul>
@@ -99,60 +106,57 @@
             </script>
         </section>
         <div id="navegacion">
-          <h6><a href="index.html">Home</a><i class="glyphicon glyphicon-chevron-right"></i> Análisis <i class="glyphicon glyphicon-chevron-right"></i><span> Fertilizantes orgánicos / Kits / Otros</span></h6>
+          <h6><a href="index.php">Home</a><i class="glyphicon glyphicon-chevron-right"></i> Análisis <i class="glyphicon glyphicon-chevron-right"></i><span> Aguas</span></h6>
         </div>
         <div id="contenido">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>Fertilizantes orgánicos / Kits / Otros</h3>
+                    <h3>Aguas</h3>
                     <div class="col-xs-12">
                         <br>
-                        <p>Análisis de fertilizantes orgánicos (NCh/2880)</p>
+                        <p>Determina la calidad de agua para riego, fertirriego y aplicaciones de productos.</p>
                     </div>
                     <div class="col-xs-9">    
                         <br>
                         <div class="cajaazul">
-                            <p>Sustratos – Compost – Tierras de hojas – Guanos, etc.</p>
-                            <p>Análisis de nemátodos.</p>
-                            <p>Servicio de muestreos.</p>
-                            <p>Kit para determinaciones en packing.</p>
+                            <p>pH-C.E. + (Cationes:Ca-Mg-Na-K (Aniones) Cl-SO4-HCO3 Ídem + NO3 + NH4 + P + Zn-Mn-Fe-Cu-B-Mo Bacteriológico: coliformes totales, fecales y E. coli.</p>
                         </div>
                         <br>
                         <div class="goto">
                             <ul>
-                                <li><a href="pautasdemuestreo.html">Ir a <strong>Pautas de muestreo</strong></a></li>
-                                <li><a href="precios.html">Ir a <strong>Precios</strong></a></li>
+                                <li><a href="pautasdemuestreo.php">Ir a <strong>Pautas de muestreo</strong></a></li>
+                                <li><a href="precios.php">Ir a <strong>Precios</strong></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <img class="mapa" src="img/imagen.png" alt="">
+                        <img class="img-responsive img-thumbnail" src="img/analisis/agua.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<footer>
+    <footer>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-2">
                 <h5>SERVICIOS</h5>
                     <ul class="outicon">
-                        <li><a href="suelos.html">Suelos</a></li>
-                        <li><a href="foliar.html">Tejidos vegetales</a></li>
-                        <li><a href="frutos.html">Frutos</a></li>
-                        <li><a href="aguas.html">Aguas</a></li>
-                        <li><a href="fito.html">Fitopatológicos</a></li>
-                        <li><a href="fertilizantes.html">Fertilizantes orgánicos / Kits / Otros</a></li>
+                        <li><a href="suelos.php">Suelos</a></li>
+                        <li><a href="foliar.php">Tejidos vegetales</a></li>
+                        <li><a href="frutos.php">Frutos</a></li>
+                        <li><a href="aguas.php">Aguas</a></li>
+                        <li><a href="fito.php">Fitopatológicos</a></li>
+                        <li><a href="fertilizantes.php">Fertilizantes orgánicos / Kits / Otros</a></li>
                     </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
                 <h5>ACERCA DE</h5>
                     <ul class="outicon">
-                        <li><a href="pautasdemuestreo.html">Pautas de muestreo</a></li>
-                        <li><a href="formularios.html">Formularios</a></li>
-                        <li><a href="enviomuestras.html">Envío de muestras</a></li>
-                        <li><a href="nosotros.html">Acreditaciones</a></li>
-                        <li><a href="precios.html">Precios de análisis</a></li>
+                        <li><a href="pautasdemuestreo.php">Pautas de muestreo</a></li>
+                        <li><a href="formularios.php">Formularios</a></li>
+                        <li><a href="enviomuestras.php">Envío de muestras</a></li>
+                        <li><a href="nosotros.php">Acreditaciones</a></li>
+                        <li><a href="precios.php">Precios de análisis</a></li>
                     </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
@@ -167,21 +171,17 @@
                 <h5>NOTICIAS</h5>
                 <div id="noticias">
                     <ul>
-                        <li>
-                            <h5>Fitopatología</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Nutrición</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Actualización de precios según IPC</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
+                    <?php
+                        $noticias = new Noticias();
+                        $noticias=$noticias->get_noticias(1);
+
+                        for($i=0;$i<sizeof($noticias);$i++){
+                            echo '<li>';
+                            echo '<h5>'.$noticias[$i]["TITULO"].'</h5>';
+                            echo '<p>'.$noticias[$i]["CONTENIDO"].'</p>';
+                            echo '</li>';
+                        }
+                    ?>
                     </ul>
                 </div>
                 <script>

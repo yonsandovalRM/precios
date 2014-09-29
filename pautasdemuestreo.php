@@ -1,3 +1,10 @@
+<?php
+
+/*para que el programa funcione requerimos obligatoriamente
+y de forma estricta que se incluya el fichero class.php*/
+require_once("include/class.php");
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,22 +41,22 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="nosotros.php">Nosotros</a></li>
             <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análisis <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="suelos.html">Suelos</a></li>
-                    <li><a href="foliar.html">Tejidos vegetales</a></li>
-                    <li><a href="frutos.html">Frutos</a></li>
-                    <li><a href="aguas.html">Aguas</a></li>
-                    <li><a href="fito.html">Fitopatológicos</a></li>
-                    <li><a href="fertilizantes.html">Fertilizantes orgánicos / Kits / Otros</a></li>
+                    <li><a href="suelos.php">Suelos</a></li>
+                    <li><a href="foliar.php">Tejidos vegetales</a></li>
+                    <li><a href="frutos.php">Frutos</a></li>
+                    <li><a href="aguas.php">Aguas</a></li>
+                    <li><a href="fito.php">Fitopatológicos</a></li>
+                    <li><a href="fertilizantes.php">Fertilizantes orgánicos / Kits / Otros</a></li>
                     <li class="divider"></li>
-                    <li><a href="formularios.html">Formularios</a></li>
-                    <li><a href="enviomuestras.html">Envío de muestras</a></li>
-                    <li><a href="pautasdemuestreo.html">Pautas de Muestreo</a></li>
-                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="formularios.php">Formularios</a></li>
+                    <li><a href="enviomuestras.php">Envío de muestras</a></li>
+                    <li><a href="pautasdemuestreo.php">Pautas de Muestreo</a></li>
+                    <li><a href="precios.php">Precios</a></li>
                     <li class="divider"></li>
                     <li><a href="include/cotizar.php">Cotizar</a></li>
                 </ul>
@@ -67,8 +74,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Idioma <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="index.html">Español</a></li>
-            <li><a href="en/index.html">English</a></li>
+            <li><a href="index.php">Español</a></li>
+            <li><a href="en/index.php">English</a></li>
           </ul>
         </li>
         </ul>
@@ -99,25 +106,38 @@
             </script>
         </section>
         <div id="navegacion">
-          <h6><a href="index.html">Home</a><i class="glyphicon glyphicon-chevron-right"></i> Análisis <i class="glyphicon glyphicon-chevron-right"></i><span> Formularios</span></h6>
+          <h6><a href="index.php">Home</a><i class="glyphicon glyphicon-chevron-right"></i> Análisis <i class="glyphicon glyphicon-chevron-right"></i><span> Pautas de muestreo</span></h6>
         </div>
         <div id="contenido">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>Formularios</h3>
+                    <h3>Pautas de muestreo</h3>
                     <div class="col-xs-12">
                         <br>
-                        <p>A modo de realizar un correcto ingreso de la información enviada por sus clientes, se han elaborado Formularios de ingreso y recepción de muestras para los diferentes tipos de análisis.</p>
-                        <p>El correcto ingreso de la información de su muestra, dependerá de que llene las secciones puestas en estos formularios.</p>
+                        <p>Agrolab, con el objetivo de generar un mejor servicio en los análisis de laboratorio, ha elaborado un material de apoyo para la recolección de los diferentes tipos de muestras.</p>
+                        <p>El éxito final de sus análisis, dependerá en gran medida, que siga las instrucciones señaladas en la pautas de muestreo.</p>
                     </div>
                     <div class="col-xs-9">    
                         <br>
-                        <div class="cajaazul">
-                            <ul class="listaformularios">
-                                <li><a href="assets/formularios/formulario_foliar.pdf">Formulario de ingreso Foliar</a></li>
-                                <li><a href="assets/formularios/formulario_suelo.pdf">Formulario de ingreso Suelo</a></li>
-                                <li><a href="assets/formularios/formulario_agua.pdf">Formulario de ingreso Agua</a></li>
-                                <li><a href="assets/formularios/formulario_muestra_fitopatologica.pdf">Formulario de ingreso Fitopatología</a></li>
+                        <div class="col-xs-12 col-sm-6">
+                            <ul class="listapautas">
+                                <li><a href="assets/pautas/pauta_suelo.pdf">Suelo</a></li>
+                                <li><a href="assets/pautas/pauta_frutos.pdf">Fruto</a></li>
+                                <li><a href="assets/pautas/pauta_agua_riego.pdf">Agua de riego</a></li>
+                                <li><a href="assets/pautas/pauta_agua_riego_bactereologico.pdf">Agua de riego bacteriológico</a></li>
+                                <li><a href="assets/pautas/pauta_fertilidad_yemas.pdf">Fertilidad yemas</a></li>
+                                <li><a href="assets/pautas/procedimiento_analisis_fitopatologico.pdf">Fitopatologícos</a></li>
+                                <li><a href="assets/pautas/pauta_arginina_raices.pdf">Arginina raíces</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <ul class="listapautas">
+                                <li><a href="assets/pautas/pauta_frutales_mayores.pdf">Frutales mayores</a></li>
+                                <li><a href="assets/pautas/pauta_frutales_menores.pdf">Frutales menores</a></li>
+                                <li><a href="assets/pautas/pauta_foliar_nogales.pdf">Nogal</a></li>
+                                <li><a href="assets/pautas/pauta_foliar_palto.pdf">Paltos</a></li>
+                                <li><a href="assets/pautas/pauta_foliar_vides.pdf">Vides</a></li>
+                                <li><a href="assets/pautas/pauta_nematologico.pdf">Nemátodos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -133,22 +153,22 @@
             <div class="col-xs-12 col-sm-6 col-md-2">
                 <h5>SERVICIOS</h5>
                     <ul class="outicon">
-                        <li><a href="suelos.html">Suelos</a></li>
-                        <li><a href="foliar.html">Tejidos vegetales</a></li>
-                        <li><a href="frutos.html">Frutos</a></li>
-                        <li><a href="aguas.html">Aguas</a></li>
-                        <li><a href="fito.html">Fitopatológicos</a></li>
-                        <li><a href="fertilizantes.html">Fertilizantes orgánicos / Kits / Otros</a></li>
+                        <li><a href="suelos.php">Suelos</a></li>
+                        <li><a href="foliar.php">Tejidos vegetales</a></li>
+                        <li><a href="frutos.php">Frutos</a></li>
+                        <li><a href="aguas.php">Aguas</a></li>
+                        <li><a href="fito.php">Fitopatológicos</a></li>
+                        <li><a href="fertilizantes.php">Fertilizantes orgánicos / Kits / Otros</a></li>
                     </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
                 <h5>ACERCA DE</h5>
                     <ul class="outicon">
-                        <li><a href="pautasdemuestreo.html">Pautas de muestreo</a></li>
-                        <li><a href="formularios.html">Formularios</a></li>
-                        <li><a href="enviomuestras.html">Envío de muestras</a></li>
-                        <li><a href="nosotros.html">Acreditaciones</a></li>
-                        <li><a href="precios.html">Precios de análisis</a></li>
+                        <li><a href="pautasdemuestreo.php">Pautas de muestreo</a></li>
+                        <li><a href="formularios.php">Formularios</a></li>
+                        <li><a href="enviomuestras.php">Envío de muestras</a></li>
+                        <li><a href="nosotros.php">Acreditaciones</a></li>
+                        <li><a href="precios.php">Precios de análisis</a></li>
                     </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-2">
@@ -163,21 +183,17 @@
                 <h5>NOTICIAS</h5>
                 <div id="noticias">
                     <ul>
-                        <li>
-                            <h5>Fitopatología</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Nutrición</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
-                        <li>
-                            <h5>Actualización de precios según IPC</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vitae libero, cumque iusto consequatur doloremque odit obcaecati nihil harum reiciendis quo error reprehenderit quas porro inventore eum illo impedit. Omnis.
-                            </p>
-                        </li>
+                    <?php
+                        $noticias = new Noticias();
+                        $noticias=$noticias->get_noticias(1);
+
+                        for($i=0;$i<sizeof($noticias);$i++){
+                            echo '<li>';
+                            echo '<h5>'.$noticias[$i]["TITULO"].'</h5>';
+                            echo '<p>'.$noticias[$i]["CONTENIDO"].'</p>';
+                            echo '</li>';
+                        }
+                    ?>
                     </ul>
                 </div>
                 <script>
