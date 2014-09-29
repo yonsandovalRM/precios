@@ -127,6 +127,8 @@ require_once("include/class.php");
                             <h4>Visión</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laborum doloribus consequatur vitae nam blanditiis, corrupti, perspiciatis perferendis culpa ex eveniet, corporis, ab obcaecati cumque at rem odio eum amet.</p>
                         </div>
+                        <br>
+                        <img class="img-responsive img-thumbnail" src="img/foto_grupo.jpg" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-5">
                         <br>

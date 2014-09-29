@@ -142,7 +142,7 @@ require_once("include/class.php");
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <img class="mapa" src="img/imagen.png" alt="">
+                        <img class="img-responsive img-thumbnail" src="img/pautas.jpg" alt="">
                     </div>
                 </div>
             </div>

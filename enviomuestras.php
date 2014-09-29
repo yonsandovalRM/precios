@@ -153,6 +153,7 @@ require_once("include/class.php");
                             <ul class="listapautas">
                                 <li><a href="assets/envio_muestras.pdf">Formulario de envio para muestras</a></li>
                             </ul>
+                            <img class="img-responsive img-thumbnail" src="img/chileexpress.jpg" alt="">
                         </div>
                     </div>
                 </div>
