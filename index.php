@@ -9,7 +9,6 @@ require_once("include/class.php");
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-    <META HTTP-EQUIV="REFRESH" CONTENT="25">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Agrolab</title>
 
@@ -119,6 +118,7 @@ require_once("include/class.php");
                               <source src="video/corporativo.ogv" type="video/ogg">
                                 Su navegador no es compatible con HTML 5 Video
                             </video>
+                            <div class="espacio"></div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <p>Agrolab, es un laboratorio  privado con una vasta experiencia en  distintos tipos de análisis agrícolas.<br><br>Nuestros servicios constan de dos áreas principales</p>
@@ -126,7 +126,6 @@ require_once("include/class.php");
                                 <li><span class="glyphicon glyphicon-chevron-right"></span> Diagnóstico Nutricional</li>
                                 <li><span class="glyphicon glyphicon-chevron-right"></span> Diagnóstico Fitopatológico</li>
                             </ul>
-                            
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                             <p>Entre los análisis que ofrecemos a nuestros clientes se encuentran:</p>
