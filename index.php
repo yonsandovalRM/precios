@@ -9,7 +9,10 @@ require_once("include/class.php");
 <html lang="es">
 <head>
 	<meta charset="utf-8">
+<<<<<<< HEAD
     <!--<META HTTP-EQUIV="REFRESH" CONTENT="25">-->
+=======
+>>>>>>> FETCH_HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Agrolab</title>
 
@@ -127,7 +130,6 @@ require_once("include/class.php");
                                 <li><span class="glyphicon glyphicon-chevron-right"></span> Diagnóstico Nutricional</li>
                                 <li><span class="glyphicon glyphicon-chevron-right"></span> Diagnóstico Fitopatológico</li>
                             </ul>
-                            
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                             <p>Entre los análisis que ofrecemos a nuestros clientes se encuentran:</p>

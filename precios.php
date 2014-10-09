@@ -119,6 +119,7 @@ require_once("include/class.php");
             <div class="row">
                 <div class="col-xs-12">
                     <h3>Listado de precios</h3>
+                    <h6>Los precios especificados en nuestro sitio web no incluyen IVA</h6>
                     <section class="tablaprecios">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" id="myTab">

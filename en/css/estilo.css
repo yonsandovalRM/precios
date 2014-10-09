@@ -226,11 +226,7 @@ ul.listafootercontacto>li>a:hover {
 	border: 0;
 }
 .circulo{
-<<<<<<< HEAD
-	border: 5px solid #2e364d;
-=======
 	border: 5px solid #2D557A;
->>>>>>> FETCH_HEAD
 	-webkit-border-radius: 200px;
 	-moz-border-radius: 200px;
 	border-radius: 200px;

@@ -1,0 +1,14 @@
+@media print {
+body { background:white; color:black; margin:0 }
+.impresion {display:none;}
+.contenedor{width: 100%; margin: auto;}
+.textoprincipal{width: 40%;}
+
+}
+@page Section1 {
+size:8.27in 11.69in; 
+margin:.10in .10in .10in .10in; 
+mso-header-margin:.10in; 
+mso-footer-margin:.10in; 
+mso-paper-source:0;
+}
